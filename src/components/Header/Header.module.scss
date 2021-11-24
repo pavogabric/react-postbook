@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+
+.Header {
+  background-color: $color-primary;
+
+  &Container {
+    width: 90%;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.WithButton {
+      justify-content: space-between;
+    }
+  }
+
+  &Title {
+    color: $color-secondary;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}

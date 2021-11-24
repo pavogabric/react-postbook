@@ -1,0 +1,27 @@
+@import "src/styles/variables";
+
+.PostComments {
+  list-style: none;
+  margin-bottom: 2rem;
+
+  &Item {
+    border-radius: 6px;
+    background-color: $color-comments-background;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &Author {
+    margin-bottom: 1rem !important;
+    color: $color-primary !important;
+  }
+
+  &Body {
+    margin: 1rem 0 0 0 !important;;
+  }
+}

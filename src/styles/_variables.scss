@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap');
+
+$default-font: 'Rubik', sans-serif;
+
+$font-weight-light: 300;
+$font-weight-bold: 500;
+$font-weight-extra-bold: 700;
+
+$color-primary: #a060c2;
+$color-secondary: #FFFFFF;
+$color-background: #FFFFFF;
+$color-text: #02010A;
+$color-text-light: #C9A6DD;
+$color-comments-background: #f1f1f1;
+
+$box-shadow-default: 0px 0px 10px rgba(0, 0, 0, 0.15);
+$box-shadow-input: 0px 0px 10px rgba($color-primary, 0.5);
+
+$max-width: 1200px;

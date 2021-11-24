@@ -1,0 +1,58 @@
+@import 'styles/variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $default-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $color-background;
+  color: $color-text;
+}
+
+main {
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: $font-weight-light;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-weight: $font-weight-bold;
+}
+
+p {
+  font-weight: $font-weight-light;
+}
+
+input, select {
+  font-family: $default-font;
+  font-weight: $font-weight-light;
+  color: $color-text;
+  padding: 10px 10px;
+  border-radius: 6px;
+  border: 1px solid $color-primary;
+  box-shadow: none;
+  transition: all 200ms;
+
+  &::placeholder {
+    color: #8d8d8d;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: $box-shadow-input;
+  }
+}

@@ -1,0 +1,55 @@
+@import "src/styles/variables";
+
+.Button {
+  cursor: pointer;
+  font: $default-font;
+  font-size: 14px;
+  padding: 12px 24px;
+  font-weight: $font-weight-extra-bold;
+  border-radius: 6px;
+  transition: all 200ms;
+
+  &.PrimaryColor {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    color: $color-secondary;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+      color: $color-primary;
+    }
+    &.Outline {
+      background-color: transparent;
+      color: $color-primary;
+      &:hover,
+      &:active {
+        background-color: $color-primary;
+        color: $color-secondary;
+      }
+    }
+  }
+
+  &.SecondaryColor {
+    background-color: $color-secondary;
+    border: 1px solid $color-secondary;
+    color: $color-primary;
+
+    &:hover,
+    &:active {
+      border: 1px solid $color-secondary;
+      background-color: transparent;
+      color: $color-secondary;
+    }
+    &.Outline {
+      background-color: transparent;
+      color: $color-secondary;
+
+      &:hover,
+      &:active {
+        background: $color-secondary;
+        color: $color-primary;
+      }
+    }
+  }
+}

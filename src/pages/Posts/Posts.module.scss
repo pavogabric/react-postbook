@@ -1,0 +1,25 @@
+.Posts {
+  width: 100%;
+  &List {
+    list-style: none;
+    text-align: left;
+  }
+
+  &Filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    input {
+      width: 70%;
+    }
+    select {
+      width: 25%;
+    }
+  }
+
+  p.InfoText {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
